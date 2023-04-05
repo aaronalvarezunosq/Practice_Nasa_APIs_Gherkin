@@ -6,7 +6,6 @@
   "scripts": {
     "test": "test",
     "cypress:open": "cypress open"
-
   },
   "keywords": [
     "practice",
@@ -19,5 +18,10 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^12.9.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "esbuild": "^0.17.15"
   }
 }
