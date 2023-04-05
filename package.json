@@ -1,0 +1,23 @@
+{
+  "name": "practice_nasa_apis_gherkin",
+  "version": "1.0.0",
+  "description": "API request practice with Gherkin",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open"
+
+  },
+  "keywords": [
+    "practice",
+    "API",
+    "cypress",
+    "gherkin",
+    "NASA"
+  ],
+  "author": "Aaron Alvarez",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.9.0"
+  }
+}
