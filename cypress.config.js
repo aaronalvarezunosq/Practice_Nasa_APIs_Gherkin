@@ -15,6 +15,6 @@ on('file:preprocessor', bundler);
 await addCucumberPreprocessorPlugin(on, config);
 return config;
 },
-specPattern: 'cypress/e2e/features/*.feature'
+specPattern: "cypress/e2e/features/*.feature"
 },
 });

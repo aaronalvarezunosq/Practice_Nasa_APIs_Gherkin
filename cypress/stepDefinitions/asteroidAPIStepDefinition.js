@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 import {Given, When, Then} from '@badeball/cypress-cucumber-preprocessor';
-const asteroids = require('../support/pageObject/testData/asteroidsAPI.json');
+const asteroids = require('../support/pageObject/testData/asteroids.json');
 const apiKey = require('../support/pageObject/testData/api_key.json');
 let baseURL;
 
@@ -13,7 +13,7 @@ When('I make the request to the API', () => {
     cy.request({
         method: 'GET',
         url: baseURL,
-        qs:{"start_date":asteroids.start_date,"end_date":asteroids.end_date,"api_key":apiKey.api_key} //passing parameters for the request
+        qs:{"start_date":asteroids.start_date,"end_date":asteroids.end_date,"api_key":apiKey.token} //passing parameters for the request
       }).as('request');
 })
 
